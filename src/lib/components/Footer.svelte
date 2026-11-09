@@ -1,3 +1,3 @@
 
-    <p>&copy;Jeremy Spicehandler</p>
+    <p>Jeremy Spicehandler&copy;</p>
     

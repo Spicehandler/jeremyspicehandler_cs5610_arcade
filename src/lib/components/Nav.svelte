@@ -11,16 +11,38 @@
          -->
         <script>
             import { resolve } from '$app/paths';
+            import { page } from '$app/state';
         </script>
         
         <header>
             <nav>
                 <ul class="link-container">
-                    <li class="nav-list"><a href={resolve('/')}>Home</a></li>
-                    <li class="nav-list"><a href={resolve('/crossword')}>Crossword</a></li>
-                    <li class="nav-list"><a href ={resolve('/aboutme')}>About Me</a></li>
-                    <li class="nav-list"><a href={resolve('/contact')}>Contact</a></li>
-                    <li class="nav-list"><a href={resolve('/2048')}>2048</a></li>
+                    <li class="nav-list"><a 
+                        class="btn" href={resolve('/')}
+                        aria-current={page.url.pathname ===resolve('/') ? 'page' : undefined}>
+                    Home</a></li>
+                    <li class="nav-list"><a 
+                        class="btn" href={resolve('/crossword')}
+                        aria-current={page.url.pathname ===resolve('/crossword') ? 'page' : undefined}>
+                    Crossword</a>
+                    </li>
+                    <li class="nav-list"><a
+                        class="btn" href ={resolve('/aboutme')}
+                        aria-current={page.url.pathname ===resolve('/aboutme') ? 'page' : undefined}>
+                    About Me</a>
+                    </li>
+                    <li class="nav-list"><a 
+                        class="btn" 
+                        href={resolve('/contact')}
+                        aria-current={page.url.pathname ===resolve('/contact') ? 'page' : undefined}>
+                    Contact</a>
+                    </li>
+                    <li class="nav-list"><a
+                        class="btn"
+                        href={resolve('/2048')}
+                        aria-current={page.url.pathname === resolve('/2048') ? 'page' : undefined}>
+                    2048</a>
+                    </li>
                 </ul>
             </nav>
             <p class="nav-bar-name">Jeremy Spicehandler</p>
@@ -36,23 +58,7 @@ nav {
 
 
 }
-nav a{
-    background: var(--color-acct);
-    border: 2px solid white;
-    border-radius: 5px;
-    color: black;
-    display: inline-block;
-    text-align: center;
-    min-width: 60px;
-    padding: 0.4rem;
-    text-decoration: none;
-    margin: 0;
-    transition: ease-in-out 300ms;
-}
 
-nav a:hover{
-    background: #7ADEFF;
-}
 
 .link-container{
     display :flex;
