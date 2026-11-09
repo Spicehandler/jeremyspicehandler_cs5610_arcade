@@ -152,7 +152,7 @@
                     exploring Seattle on my road bike, camping, and I also am a physical media only (vinyl and cd) DJ
                     on weekends. I've been obsessively collecting music my whole life, and have recently turned that 
                     passion into a hobby where I stream live on Mixcloud and TikTok, and even book gigs around Seattle
-                    to perform live in front of an audience. Please feel free to check the <a href="{resolve}/contact">contact</a> page
+                    to perform live in front of an audience. Please feel free to check the <a href={resolve('/contact')}>contact</a> page
                     for links to my DJ content.
                 </p>
                 <div class="image-container">
