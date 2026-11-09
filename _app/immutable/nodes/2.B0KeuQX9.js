@@ -1,0 +1,4 @@
+import{A as e,I as t,N as n,U as r,W as i,j as a,k as o,o as s,r as c,x as l,y as u}from"../chunks/BM_iOwY6.js";import"../chunks/CHIMr_DD.js";var d=new URL(`../assets/gameroom.DxIpVwIE.jpg`,import.meta.url).href,f=l(`<main><h1>Welcome to The Game Den</h1> <img alt="img of gameroom" height="300" width="300"/> <h2>About this site</h2> <p>You've safely arrived at my game site! This is only the
+        landing page but there is so much more. Make sure you 
+        use the navigation bar to explore the site. I will be
+        adding games over the next several weeks for you to enjoy!</p></main>`);function p(l){var p=f();s(`1uha8ag`,e=>{o(()=>{a.title=`Homepage`})});var m=t(n(p),2);r(4),i(p),e(()=>c(m,`src`,d)),u(l,p)}export{p as component};
