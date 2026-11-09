@@ -47,7 +47,7 @@
 <svelte:head>
     <title>2048</title>
 </svelte:head>
-<main></main>
+<main>
     <div class="game-header">
     <h1>2048</h1>
     <div aria-live="polite">
